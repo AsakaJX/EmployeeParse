@@ -8,6 +8,7 @@ class Program {
 
         if (args.Length == 0) {
             Log.NewLog(Logger.Severity.Critical, "Не было предоставлено аргументов.");
+            Console.WriteLine("Нажмите ENTER чтобы выйти из программы.");
             Console.ReadLine();
             return;
         }
@@ -20,6 +21,7 @@ class Program {
         var manager = new Services.EmployeeManager(filePath);
         ParseArguments(args, manager);
 
+        Console.WriteLine("Нажмите ENTER чтобы выйти из программы.");
         Console.ReadLine();
     }
     static void ParseArguments(string[] args, Services.EmployeeManager manager) {
