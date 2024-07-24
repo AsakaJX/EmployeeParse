@@ -1,0 +1,4 @@
+**/bin/
+**/obj/
+**/Builds/
+omnisharp.json
